@@ -39,7 +39,7 @@ export default function HomeSearch() {
       />
       <BsFillMicFill className="text-lg" />
     </form>
-    <div className="flex flex-col space-y-2 mt-4">
+    <div className="flex flex-col items-center space-y-2 sm:space-y-0  mt-4 mb-4">
     <button 
     
     className="bg-[#f8f9fa] rounded-md text-sm text-gray-800 hover:ring-gray-200
@@ -50,7 +50,7 @@ export default function HomeSearch() {
      <button 
      disabled={randomSearchLoading}
      className="bg-[#f8f9fa] rounded-md text-sm text-gray-800 hover:ring-gray-200
-    focus:outline-none active:ring-gray-300 hover:shadow-md w:36 h-10 transition-shadow transition-shadow disabled:opacity-80 mb-4"
+    focus:outline-none active:ring-gray-300 hover:shadow-md w:36 h-10 transition-shadow transition-shadow disabled:opacity-80 pb-4 "
           onClick={randomSearch} >
            {randomSearchLoading?'Loading...':'I am feeling lucky'} 
             </button>
